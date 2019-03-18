@@ -9,6 +9,8 @@ public class Client implements OnClickListener {
     private void test(){
         RadioButton radioButton = new RadioButton("mybutton");
         radioButton.addOnClickListener(this);
+        radioButton.addOnClickListener(new MyClickListener());
+
         radioButton.click();
     }
 
